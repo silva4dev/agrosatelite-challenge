@@ -1,0 +1,137 @@
+@import "~font-awesome/css/font-awesome.css";
+
+.farm-dashboard {
+    margin-top: 20px;
+}
+
+.farm-new {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+
+.farm-new a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #16a34a;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 600;
+}
+
+.farm-new a i {
+    font-size: 12px;
+}
+
+.farm-new a:hover {
+    filter: brightness(0.9);
+}
+
+.farm-list .card {
+    background: #27272A;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #a1a1aa;
+}
+
+.farm-list .card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.farm-list .card:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.farm-list .card:hover p {
+    color: #fff;
+}
+
+.farm-search input {
+    height: 40px;
+    width: calc(100% - 32px);
+    margin-bottom: 30px;
+    padding: 16px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: #27272a;
+    color: #a1a1aa;
+    background-image: url("../../assets/images/search.png");
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+    background-size: 25px;
+}
+
+.farm-search input::placeholder {
+    color: #a1a1aa;
+}
+
+.farm-search input:focus {
+    border: 2px solid #16a34a;
+    outline: none;
+}
+
+.farm-pagination {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.farm-pagination button {
+    background: #16a34a;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.farm-pagination button:disabled {
+    background: #27272a;
+}
+
+.farm-pagination button:disabled:hover {
+    cursor: initial;
+}
+
+.farm-pagination button:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.farm-pagination-pages {
+    display: flex;
+    justify-content: end;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.farm-list a {
+    text-decoration: none;
+    color: #000;
+}
+
+.farm-pagination-pages span {
+    color: #a1a1aa;
+}
+
+.toast-success {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+}

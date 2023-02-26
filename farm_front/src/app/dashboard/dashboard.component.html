@@ -1,0 +1,43 @@
+<section class="farm-dashboard">
+    <div class="farm-new">
+        <a routerLink="farm">
+            New Farm <i class="fa fa-plus"></i>
+        </a>
+    </div>
+    <div class="farm-search">
+        <input type="text" [(ngModel)]="searchFarm" (keyup)="searchFarms()" placeholder="Search farm...">
+    </div>
+    <div class="farm-list" *ngIf="farms.length > 0">
+        <ng-container *ngFor="let farm of farms">
+            <a [routerLink]="'/farm/' + farm.id + '/details'">
+                <div class="card">
+                    <div class="card-body">
+                        <p>{{ farm.name }}</p>
+                    </div>
+                </div>
+            </a>
+        </ng-container>
+        <div class="farm-pagination">
+            <button [disabled]="currentPage == 1" (click)="firstPage()">
+                <i class="fa fa-angle-double-left"></i>
+            </button>
+            <button [disabled]="currentPage == 1" (click)="prevPage()">
+                <i class="fa fa-angle-left"></i>
+            </button>
+            <ng-container *ngFor="let page of getPageRange()">
+                <button [disabled]="currentPage == page" (click)="currentPage = page; getFarmsForPage()">
+                    {{ page }}
+                </button>
+            </ng-container>
+            <button [disabled]="currentPage == totalPages" (click)="nextPage()">
+                <i class="fa fa-angle-right"></i>
+            </button>
+            <button [disabled]="currentPage == totalPages" (click)="lastPage()">
+                <i class="fa fa-angle-double-right"></i>
+            </button>
+        </div>
+        <div class="farm-pagination-pages">
+            <span>Page {{ currentPage }} of {{ totalPages }}</span>
+        </div>
+    </div>
+</section>

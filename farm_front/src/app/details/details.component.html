@@ -1,0 +1,20 @@
+<section class="farm-details">
+    <div class="farm-actions">
+        <div class="farm-back">
+            <a routerLink="/">
+                <i class="fa fa-arrow-left"></i> Back
+            </a>
+        </div>
+        <div class="farm-delete">
+            <a (click)="deleteFarm()">
+                Delete <i class="fa fa-trash"></i>
+            </a>
+        </div>
+        <div class="farm-edit">
+            <a [routerLink]="'/farm/' + paramFarmId + '/details/edit/' + paramFarmId">
+                Edit <i class="fa fa-edit"></i>
+            </a>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</section>

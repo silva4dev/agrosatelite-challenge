@@ -1,0 +1,83 @@
+@import "~font-awesome/css/font-awesome.css";
+
+.farm-back {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.farm-back a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #16a34a;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    width: 100px;
+}
+
+.farm-back a i {
+    font-size: 12px;
+}
+
+.farm-back a:hover {
+    filter: brightness(0.9);
+}
+
+.farm-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.farm-delete a {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    background: #16a34a;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    width: 100px;
+}
+
+.farm-delete a i {
+    font-size: 14px;
+}
+
+.farm-delete a:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.farm-edit a {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+    background: #16a34a;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    width: 100px;
+}
+
+.farm-edit a i {
+    font-size: 14px;
+}
+
+.farm-edit a:hover {
+    filter: brightness(0.9);
+}

@@ -1,0 +1,81 @@
+@import "~font-awesome/css/font-awesome.css";
+
+.farm-back {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.farm-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.farm-back a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #16a34a;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    width: 100px;
+}
+
+.farm-back a i {
+    font-size: 12px;
+}
+
+.farm-back a:hover {
+    filter: brightness(0.9);
+}
+
+.farm-new a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: #16a34a;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    width: 100px;
+}
+
+.farm-new a i {
+    font-size: 12px;
+}
+
+.farm-new a:hover {
+    filter: brightness(0.9);
+}
+
+.farm-draw-circle {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.farm-draw-circle button {
+    display: block;
+    background: #3a3a3a93;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #a0a0a0;
+    width: 40%;
+    height: 45px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.farm-draw-circle button:hover {
+    background: #64646493;
+}

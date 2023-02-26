@@ -1,0 +1,16 @@
+<main class="grid">
+  <div class="grid-left" [ngStyle]="router.url=='/' ? { 'flex': '1 1 50%' } : { 'flex': '1 1 40%'}">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="grid-right" *ngIf="router.url=='/'">
+    <div class="grid-right-title">
+      <h1>Agrosatélite Geotecnologia Aplicada Processo Seletivo</h1>
+    </div>
+    <div class="grid-footer">
+      <p>Desenvolvido com <i class="fa fa-heart"></i> por <span>Lucas Alves da Silva</span></p>
+    </div>
+  </div>
+  <div class="grid-right-map" *ngIf="router.url!='/'">
+    <app-basemap #map *ngIf="router.url!='/'"></app-basemap>
+  </div>
+</main>

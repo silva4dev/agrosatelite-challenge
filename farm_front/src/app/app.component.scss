@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
+@import "~font-awesome/css/font-awesome.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.grid {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: start;
+}
+
+.grid-left {
+    height: 100vh;
+    background: #181818;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: scroll;
+    flex: 1 1 50%;
+}
+
+.grid-right {
+    display: flex;
+    flex-direction: column;
+    background: #16a34a;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.grid-right-map {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-left::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.grid-right-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-footer {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    background: #117435;
+}
+
+.grid-footer p {
+    font-size: 18px;
+}
+
+.grid-footer i {
+    color: #f03535;
+}
+
+.grid-footer span {
+    font-weight: 600;
+}
+
+.grid-right-title h1 {
+    font-size: 56px;
+}
