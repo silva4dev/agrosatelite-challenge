@@ -1,15 +1,14 @@
 from django.contrib.gis.db import models
 from django.utils.translation import gettext as _
 
-class Farm(models.Model):
 
 class Farm(models.Model):
     name = models.CharField(verbose_name=_("Name"), max_length=255,
-                            null=True, blank=True)  
+                            null=False, blank=False)
     municipality = models.CharField(verbose_name=_("Municipality"), max_length=255,
-                                     null=True, blank=True)
+                                    null=False, blank=False)
     state = models.CharField(verbose_name=_("State"), max_length=255,
-                              null=True, blank=True)
+                             null=False, blank=False)
 
     geometry = models.GeometryField(verbose_name=_("Geometry"),
                                     null=True, blank=True)
@@ -27,7 +26,9 @@ class Farm(models.Model):
         verbose_name=_("Last modification date"), auto_now=True)
 
     is_active = models.BooleanField(verbose_name=_("Is Active"), default=True)
-    owner = models.ForeignKey(Owner, related_name='farms', on_delete=models.CASCADE, null=True, blank=True)
+
+    owner = models.ForeignKey(
+        "Owner", on_delete=models.CASCADE, blank=False, null=False)
 
     def __str__(self):
         return str(self.name)

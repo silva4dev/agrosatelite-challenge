@@ -16,6 +16,6 @@ class OwnerListCreateView(generics.ListCreateAPIView):
 
 
 class OwnerRetrieveUpdateDestroyView(
-    generics.RetrieveUpdateDestroyAPIView):
+        generics.RetrieveUpdateDestroyAPIView):
     queryset = Owner.objects.filter(is_active=True)
     serializer_class = OwnerDetailSerializer
